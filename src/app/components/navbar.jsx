@@ -1,30 +1,33 @@
-"use client";
-
-import Link from "next/link";
-
 export default function Navbar() {
   return (
-    <header className="fixed top-0 z-50 w-full">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-8">
+    <header className="pt-8 sticky top-0 z-50 bg-[#f0ece6]">
+      <div className="max-w-5xl mx-auto px-6 flex items-center justify-between">
 
-        <Link
-          href="/"
-          className="font-serif text-2xl italic tracking-wide"
-        >
-          Aihtesham
-        </Link>
+        <a href="#hero">
+          <h2
+            className="text-xl italic font-light cursor-pointer"
+            style={{ fontFamily: "var(--font-cormorant)" }}
+          >
+            Chaudhary Aihtesham
+          </h2>
+        </a>
 
-        <nav className="hidden md:flex items-center gap-10 text-sm">
-
-          <Link href="#about">About</Link>
-
-          <Link href="#projects">Projects</Link>
-
-          <Link href="#skills">Skills</Link>
-
-          <Link href="#contact">Contact</Link>
-
-        </nav>
+        <div className="flex items-center gap-8 text-sm">
+          {[
+            { label: "About", href: "#about" },
+            { label: "Projects", href: "#projects" },
+            { label: "Skills", href: "#skills" },
+          ].map((l) => (
+            <a
+              key={l.label}
+              href={l.href}
+              className="text-[#888077] hover:text-[#5E3023] transition-colors duration-150"
+              style={{ fontFamily: "var(--font-inter)" }}
+            >
+              {l.label}
+            </a>
+          ))}
+        </div>
 
       </div>
     </header>
