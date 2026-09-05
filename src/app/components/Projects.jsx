@@ -9,22 +9,22 @@ const projects = [
     live: "https://oss-buddy.vercel.app/",
   },
   {
-    name: "PDFSense",
-    type: "AI Document Tool",
-    year: "2025",
-    desc: "Upload PDFs and interact with them in natural language. Features a responsive three-panel workspace, AI-powered contextual Q&A, smart document understanding, and note-taking powered by Gemini AI.",
-    tags: ["Next.js", "Express.js", "MongoDB", "Gemini AI", "Shadcn UI"],
-    github: "https://github.com/TheAihtesham/AI-notes-pdf-taker",
-    live: "https://ai-notes-pdf-taker.vercel.app/",
+    name: "BugMemory",
+    type: "Semantic Search Engine",
+    year: "2026",
+    desc: "Semantic bug search engine using Gemini embeddings and pgvector to find past debugging solutions by meaning, not exact keywords.",
+  tags: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "pgvector", "Upstash Redis", "Gemini AI"],
+  github: "https://github.com/TheAihtesham/Bugmemory",
+  live: "https://bugmemory-ashen.vercel.app/",
   },
-  {
-    name: "CodeMate",
+{
+  name: "CodeMate",
     type: "Real-time Collaboration",
-    year: "2025",
-    desc: "WebSocket-powered collaborative code editor with multi-user live sync. Sandboxed code execution across multiple languages via Judge0, plus Gemini AI assistance built in.",
-    tags: ["Next.js", "Express.js", "WebSockets", "Judge0", "Gemini AI", "Shadcn UI"],
-    github: "https://github.com/TheAihtesham/ai-collaborative-code-editor",
-    live: "https://ai-collaborative-code-editor.vercel.app/",
+      year: "2025",
+        desc: "WebSocket-powered collaborative code editor with multi-user live sync. Sandboxed code execution across multiple languages via Judge0, plus Gemini AI assistance built in.",
+          tags: ["Next.js", "Express.js", "WebSockets", "Judge0", "Gemini AI", "Shadcn UI"],
+            github: "https://github.com/TheAihtesham/ai-collaborative-code-editor",
+              live: "https://ai-collaborative-code-editor.vercel.app/",
   },
 ];
 
@@ -32,7 +32,7 @@ export default function ProjectsPage() {
   return (
     <main id="projects" className="min-h-screen bg-[#f0ece6] px-6 md:px-16 py-24">
       <div className="mb-12 max-w-xl mx-auto">
-        
+
         <h1
           className="text-[3rem] md:text-[3.7rem] font-light tracking-tight text-[#1c1c1a] leading text-center"
           style={{ fontFamily: "var(--font-cormorant)" }}
@@ -65,7 +65,7 @@ export default function ProjectsPage() {
                   {p.year}
                 </span>
               </div>
-              
+
             </div>
 
             <div className="mt-auto pt-4">
@@ -134,7 +134,7 @@ export default function ProjectsPage() {
             >
               Soon
             </span>
-            
+
           </div>
           <div className="mt-auto pt-8">
             <p
