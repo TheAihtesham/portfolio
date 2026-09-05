@@ -34,7 +34,7 @@ export default function Hero() {
 
             <div className="flex items-center gap-6 mt-10">
                 <a
-                    href="/ChaudharyAihteshamResume.pdf"
+                    href="/ChaudharyAihteshamResumee.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 border border-[#5E3023] text-[#5E3023] px-5 py-2.5 text-[0.72rem] uppercase tracking-[0.12em] hover:bg-[#5E3023] hover:text-[#f0ece6] transition-all duration-200"
